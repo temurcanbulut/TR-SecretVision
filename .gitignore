@@ -1,0 +1,17 @@
+node_modules/
+images/
+.work/
+.tools/
+.taste-skill/
+.git/
+dist/
+examples/output/
+*.zip
+.env*
+*.log
+
+# Restored locally from the checked-in research metadata archive.
+metadata/
+annotations/
+labels/
+qa/

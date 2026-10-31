@@ -1,0 +1,31 @@
+{
+  "purpose": "Byte-identical canonical examples for documentation and annotation inspection; not a new split or performance evaluation",
+  "images": 20,
+  "pairs": 10,
+  "classes": [
+    "api_token",
+    "credential_uri",
+    "email",
+    "iban",
+    "national_id",
+    "password",
+    "person_name",
+    "phone",
+    "private_key",
+    "verification_code"
+  ],
+  "pair_ids": [
+    "pair_3398c94d4b7955",
+    "pair_d75b22a507123c",
+    "pair_d5338807e3899f",
+    "pair_4db339b83d9d6d",
+    "pair_164f0581ee29fd",
+    "pair_76c426fa91d381",
+    "pair_cec8aa99950427",
+    "pair_a35dca03c14e62",
+    "pair_771a0545f88565",
+    "pair_d4de10d9caa2c4"
+  ],
+  "default_pair_id": "pair_3398c94d4b7955",
+  "human_verified": false
+}

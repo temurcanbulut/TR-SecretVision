@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "TR-SecretVision Context v0.2.0",
+  "description": "Fully synthetic Turkish/English developer-security and personal-data screenshot benchmark with context counterfactuals. 1200 canonical screenshots, 600 pairs, 240 dependent stress views, 10 classes and application-disjoint splits. No human verification or model-performance result.",
+  "url": "https://evren.ssyz.org.tr/datasets/u300f9431e45f/tr-secretvision-context-v02",
+  "identifier": "https://evren.ssyz.org.tr/datasets/u300f9431e45f/tr-secretvision-context-v02",
+  "version": "0.2.0",
+  "datePublished": "2026-10-31",
+  "creator": {
+    "@type": "Organization",
+    "name": "TR-SecretVision contributors"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "inLanguage": [
+    "tr",
+    "en"
+  ],
+  "keywords": [
+    "dataset",
+    "computer-vision",
+    "turkish",
+    "secret-detection",
+    "synthetic-data",
+    "contrastive-learning",
+    "data-loss-prevention"
+  ],
+  "measurementTechnique": "Programmatic DOM character-range boxes with counterfactual raster checks",
+  "variableMeasured": [
+    "sensitive text bounding boxes",
+    "benign candidate regions",
+    "contrastive context relations"
+  ]
+}

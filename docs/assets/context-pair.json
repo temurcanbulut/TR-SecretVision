@@ -1,0 +1,9 @@
+{
+  "pair_id": "pair_3398c94d4b7955",
+  "sensitive_id": "trsv2_200e9294f11a667f",
+  "control_id": "trsv2_67251cfaf947decd",
+  "candidate_id": "v1",
+  "same_payload": true,
+  "crops_only": true,
+  "training_images_unchanged": true
+}

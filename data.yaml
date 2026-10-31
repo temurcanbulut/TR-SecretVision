@@ -1,0 +1,16 @@
+path: .
+train: images/train
+val: images/val
+test: images/test
+nc: 10
+names:
+  0: api_token
+  1: password
+  2: email
+  3: credential_uri
+  4: private_key
+  5: phone
+  6: national_id
+  7: iban
+  8: person_name
+  9: verification_code

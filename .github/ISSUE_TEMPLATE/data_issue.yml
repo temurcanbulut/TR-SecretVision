@@ -1,0 +1,21 @@
+name: Synthetic data or annotation issue
+description: Report a reproducible issue using sample IDs and synthetic evidence only.
+body:
+  - type: input
+    id: sample
+    attributes:
+      label: Sample or pair ID
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed behavior
+      description: Use synthetic examples only. Never attach real personal records or credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and environment
+      description: Include dataset version, split, command and Node/browser versions when relevant.

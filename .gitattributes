@@ -1,0 +1,4 @@
+*.png binary
+*.woff2 binary
+# Preserve source bytes recorded in metadata/generation_plan.json.
+* -text

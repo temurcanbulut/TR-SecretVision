@@ -1,0 +1,21 @@
+name: Reproducible evaluation or improvement
+description: Propose a useful synthetic-only research contribution.
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question or concrete failure
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Protocol and input access
+      description: State split, model/version, threshold and whether only screenshots are used. Report negative alarms and pair success alongside recall.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Synthetic evidence and reproduction
+      description: No real private screenshots, personal records or live keys.

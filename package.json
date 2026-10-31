@@ -1,0 +1,46 @@
+{
+  "name": "tr-secretvision-context-benchmark",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Fully synthetic Turkish/English screenshot benchmark: sensitive vs benign context pairs, application-disjoint splits and reproducible annotation QA",
+  "scripts": {
+    "plan": "node src/plan.mjs",
+    "preview": "node src/generate.mjs --preview",
+    "generate": "node src/generate.mjs",
+    "validate": "node src/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "package": "node tools/package-repository.mjs",
+    "example": "node tools/show-example.mjs",
+    "verify": "node tools/verify-repository.mjs",
+    "data:import": "node tools/import-local-data.mjs",
+    "data:prepare": "node tools/prepare-data.mjs"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/ibm-plex-sans": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0",
+    "@fontsource/noto-sans": "5.3.0",
+    "fflate": "0.8.2",
+    "playwright": "1.64.0-alpha-1790635538000",
+    "pngjs": "7.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dataset",
+    "computer-vision",
+    "turkish",
+    "secret-detection",
+    "synthetic-data",
+    "contrastive-learning",
+    "data-loss-prevention"
+  ],
+  "homepage": "https://github.com/temurcanbulut/TR-SecretVision",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/temurcanbulut/TR-SecretVision.git"
+  }
+}

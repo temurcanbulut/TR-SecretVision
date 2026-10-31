@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this synthetic dataset version and its CC BY 4.0 license. Public dataset on EVREN; source code published on GitHub; no DOI assigned."
+title: "TR-SecretVision Context: Turkish Developer Security and Personal-Data Screenshot Benchmark"
+type: dataset
+authors:
+  - name: "TR-SecretVision contributors"
+version: 0.2.0
+date-released: 2026-10-31
+license: CC-BY-4.0
+abstract: "Fully synthetic screenshots with context counterfactual pairs, application-disjoint splits, sensitive and benign candidate regions, and explicit QA artifacts. No real-world generalization claim."
+url: "https://evren.ssyz.org.tr/datasets/u300f9431e45f/tr-secretvision-context-v02"
+keywords:
+  - synthetic-data
+  - turkish
+  - computer-vision
+  - secret-detection
+repository-code: "https://github.com/temurcanbulut/TR-SecretVision"
