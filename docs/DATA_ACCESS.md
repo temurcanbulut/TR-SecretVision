@@ -5,7 +5,7 @@ The public dataset is on [EVREN](https://evren.ssyz.org.tr/datasets/u300f9431e45
 If you already have the original local archive, import it:
 
 ```sh
-npm run data:import -- --archive "C:/path/TR-SecretVision-v0.2.0-EVREN-YOLO.zip"
+npm run data:import -- --archive "./TR-SecretVision-v0.2.0-EVREN-YOLO.zip"
 npm run validate
 ```
 

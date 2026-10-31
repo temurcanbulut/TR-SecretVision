@@ -35,7 +35,7 @@ Depoda tam etiketler, manifest ve maskeler `data/research-metadata-v0.2.0.zip` i
 1.440 görselin tamamı bu kod/metaveri paketine konmadı. Daha önce hazırlanmış yerel özgün YOLO ZIP'i elinizdeyse [yerel içe aktarıcı](docs/DATA_ACCESS.md) dosya özetlerini kontrol ederek kullanır:
 
 ```sh
-npm run data:import -- --archive "C:/dosya/TR-SecretVision-v0.2.0-EVREN-YOLO.zip"
+npm run data:import -- --archive "./TR-SecretVision-v0.2.0-EVREN-YOLO.zip"
 npm run validate
 ```
 

@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "date": "2026-10-31",
+  "dataset_url": "https://evren.ssyz.org.tr/datasets/u300f9431e45f/tr-secretvision-context-v02",
+  "code_repository_url": "https://github.com/temurcanbulut/TR-SecretVision",
+  "doi": null,
+  "distribution": "Code, complete annotations and metadata, masks and 20 byte-identical examples. Full 1440-image collection is excluded from this repository package.",
+  "images": 1440,
+  "canonical_images": 1200,
+  "dependent_derivatives": 240,
+  "canonical_pairs": 600,
+  "boxes": 4255,
+  "negative_images": 342,
+  "classes": 10,
+  "manifest_sha256": "5e7022f3e913c4bbbd602a06c0ad8923e828403d55c23423b2ef2d2a334e8bec",
+  "original_archives": [
+    {
+      "file": "TR-SecretVision-v0.2.0-EVREN-YOLO.zip",
+      "sha256": "420e5cc665e93c165dcfb6b224fca4d79909542a2e8efd4aa23396888eedf6af",
+      "bytes": 85872682
+    },
+    {
+      "file": "TR-SecretVision-v0.2.0-research.zip",
+      "sha256": "78cf0c0775e93efafad4043df80ca019c0eba61d22f4f932c9969dac38bea8bf",
+      "bytes": 91284211
+    }
+  ],
+  "model_evaluation": "NOT_PERFORMED",
+  "human_verified": 0
+}

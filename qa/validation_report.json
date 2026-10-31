@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "generated_on": "2026-10-31",
+  "manifest_sha256": "5e7022f3e913c4bbbd602a06c0ad8923e828403d55c23423b2ef2d2a334e8bec",
+  "stats": {
+    "images": 1440,
+    "canonical_images": 1200,
+    "derived_images": 240,
+    "boxes": 4255,
+    "logical_sensitive_values": 2916,
+    "negatives": 342,
+    "human_verified": 0,
+    "splits": {
+      "test": {
+        "images": 360,
+        "boxes": 1013,
+        "negatives": 86,
+        "logical_values": 728,
+        "classes": {
+          "email": 72,
+          "api_token": 69,
+          "private_key": 76,
+          "phone": 75,
+          "national_id": 73,
+          "person_name": 90,
+          "credential_uri": 56,
+          "iban": 74,
+          "password": 79,
+          "verification_code": 64
+        }
+      },
+      "train": {
+        "images": 720,
+        "boxes": 1973,
+        "negatives": 168,
+        "logical_values": 1464,
+        "classes": {
+          "verification_code": 223,
+          "api_token": 148,
+          "password": 160,
+          "email": 207,
+          "private_key": 162,
+          "person_name": 113,
+          "phone": 115,
+          "national_id": 102,
+          "iban": 100,
+          "credential_uri": 134
+        }
+      },
+      "val": {
+        "images": 360,
+        "boxes": 1269,
+        "negatives": 88,
+        "logical_values": 724,
+        "classes": {
+          "phone": 40,
+          "api_token": 79,
+          "password": 114,
+          "email": 110,
+          "private_key": 111,
+          "credential_uri": 93,
+          "verification_code": 80,
+          "iban": 27,
+          "person_name": 38,
+          "national_id": 32
+        }
+      }
+    },
+    "apps": {
+      "support": 176,
+      "error": 184,
+      "http": 120,
+      "finance": 120,
+      "terminal": 120,
+      "ci": 120,
+      "people": 120,
+      "ide": 120,
+      "database": 180,
+      "vault": 180
+    },
+    "layouts": {
+      "support.ticket_thread": 46,
+      "error.structured_failure": 38,
+      "support.incident_timeline": 46,
+      "error.traceback_context": 46,
+      "support.attachment_preview": 42,
+      "support.customer_case": 42,
+      "error.exception_dialog": 58,
+      "error.build_diagnostic": 42,
+      "http.request_headers": 30,
+      "finance.settlement_table": 30,
+      "http.network_detail": 30,
+      "terminal.repl_inspector": 30,
+      "ci.deployment_summary": 30,
+      "terminal.shell_transcript": 30,
+      "people.employee_record": 30,
+      "ci.pipeline_jobs": 30,
+      "ci.environment_table": 30,
+      "http.response_object": 30,
+      "people.directory_detail": 30,
+      "people.onboarding_fields": 30,
+      "people.access_review": 30,
+      "terminal.service_journal": 30,
+      "ide.review_changes": 30,
+      "finance.transfer_receipt": 30,
+      "terminal.interactive_table": 30,
+      "ci.steps_log": 30,
+      "ide.notebook_cells": 30,
+      "finance.payout_review": 30,
+      "ide.source_and_symbols": 30,
+      "finance.beneficiary_form": 30,
+      "http.split_exchange": 30,
+      "ide.debug_variables": 30,
+      "database.record_tree": 42,
+      "vault.version_comparison": 50,
+      "vault.secret_detail": 54,
+      "vault.certificate_panel": 42,
+      "vault.configuration_yaml": 34,
+      "database.query_grid": 50,
+      "database.connection_form": 46,
+      "database.import_mapping": 42
+    },
+    "classes": {
+      "email": 389,
+      "api_token": 296,
+      "private_key": 349,
+      "phone": 230,
+      "national_id": 207,
+      "person_name": 241,
+      "credential_uri": 283,
+      "iban": 201,
+      "password": 353,
+      "verification_code": 367
+    },
+    "languages": {
+      "mixed": 480,
+      "en": 476,
+      "tr": 484
+    },
+    "themes": {
+      "light": 732,
+      "dark": 708
+    },
+    "fonts": {
+      "0": 736,
+      "1": 704
+    },
+    "font_sizes": {
+      "12": 360,
+      "14": 352,
+      "16": 380,
+      "18": 348
+    },
+    "variants": {
+      "clean": 1200,
+      "blur_070": 120,
+      "downscale_065": 120
+    },
+    "pair_kinds": {
+      "identical_payload_context": 902,
+      "literal_vs_reference": 707,
+      "private_vs_public_pem_marker": 191
+    },
+    "corrupt_files": 0,
+    "exact_file_duplicates": 0,
+    "exact_pixel_duplicates": 0,
+    "target_ink_pixels": 6600276,
+    "outside_target_box_pixels": 0,
+    "candidate_ink_pixels": 10867591,
+    "synthetic_safety_violations": 0
+  },
+  "near_duplicates": {
+    "method": "64-bit full-frame DCT pHash <= 6; secondary 32x32 grayscale MAE. A candidate is not automatically a duplicate.",
+    "comparisons": 1036080,
+    "candidates": 3937,
+    "cross_split_candidates": 0,
+    "cross_split_high_similarity": 0,
+    "threshold_hamming": 6,
+    "high_similarity_mae": 2
+  },
+  "errors": [],
+  "human_verification": "All records false. AI visual inspection is reported separately. No real-world validation or model-training claim.",
+  "security_scope": "Closed-source provenance and invalid-format guards; not an external credential or identity verification service."
+}

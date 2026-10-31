@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "node": "v24.19.0",
+  "browser": "156.0.8078.80",
+  "browser_family": "Brave/Chromium",
+  "device_scale_factor": 1,
+  "network_requests": 0,
+  "console_errors": [],
+  "canonical_rerendered": 60,
+  "canonical_unchanged_cache": 1140,
+  "cache_policy": "Only exact specification matches with matching image/mask SHA256; all derivatives recomputed; all files independently validated after generation",
+  "source_inputs": "Closed deterministic grammar only; no account files, clipboard, browsing profile, external corpus or key generation",
+  "created_on": "2026-10-31"
+}

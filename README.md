@@ -47,7 +47,7 @@ The repository stores the complete annotations, manifest and masks in `data/rese
 The full 1,440-image collection is separate from this code/metadata package. If the original local YOLO archive is already available, [import it without any platform export](docs/DATA_ACCESS.md):
 
 ```sh
-npm run data:import -- --archive "C:/path/TR-SecretVision-v0.2.0-EVREN-YOLO.zip"
+npm run data:import -- --archive "./TR-SecretVision-v0.2.0-EVREN-YOLO.zip"
 npm run validate
 ```
 

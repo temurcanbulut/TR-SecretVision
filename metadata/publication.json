@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-31",
+  "dataset_url": "https://evren.ssyz.org.tr/datasets/u300f9431e45f/tr-secretvision-context-v02",
+  "visibility": "PUBLIC",
+  "readme_visual": {
+    "persisted_after_reload": true,
+    "format": "inline PNG in Markdown",
+    "image_sha256": "b5d340ddd16afdffcd54c4c136c977b846503fab1ceae86f36a215ff21432801",
+    "width": 1280,
+    "height": 260,
+    "source_pair_id": "pair_3398c94d4b7955",
+    "source_images_unchanged": true
+  },
+  "images": 1440,
+  "boxes": 4255,
+  "classes": 10,
+  "human_verified": 0,
+  "model_training_started": false,
+  "new_export_started": false,
+  "additional_credit_spend_cr": 0,
+  "additional_credit_blocked_cr": 0,
+  "github_status": "PUBLIC",
+  "anonymous_page_access_tested": false,
+  "github_url": "https://github.com/temurcanbulut/TR-SecretVision"
+}
