@@ -12,6 +12,8 @@ The exporter preflights all 1,440 image SHA256/dimensions and the frozen manifes
 before writing, refuses an existing destination and never authenticates/uploads.
 It emits ImageFolder train/validation/test directories, JSONL metadata, pixel
 xywh boxes, class IDs, group/pair provenance, original card/license and citation.
+It also includes the dated full-image OCR protocol and frozen observations under
+their original relative paths, with supplement SHA256 values in EXPORT_QA.json.
 The separate unpublished format-ablation pilot is not silently mixed into v0.2.
 
 The directory follows [Hugging Face ImageFolder metadata](https://huggingface.co/docs/datasets/image_dataset).

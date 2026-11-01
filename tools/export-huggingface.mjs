@@ -15,6 +15,8 @@ const bytes=await readFile(resolve(ROOT,'metadata/manifest.jsonl'));
 if(sha256(bytes)!=='5e7022f3e913c4bbbd602a06c0ad8923e828403d55c23423b2ef2d2a334e8bec')throw Error('Frozen v0.2 manifest mismatch');
 const records=bytes.toString().trim().split('\n').map(JSON.parse);
 if(records.length!==1440)throw Error('Incomplete release');
+const supplementPaths=['docs/FULL_IMAGE_OCR.md','docs/baselines/windows-ocr-test.jsonl.gz','docs/baselines/windows-ocr-environment.json','docs/baselines/windows-ocr-rules.json'];
+const supplements=await Promise.all(supplementPaths.map(async path=>({path,bytes:await readFile(resolve(ROOT,path))})));
 // Preflight all images before writing a staging directory. No implicit downloads.
 for(const r of records){
  if(!/^images\/(train|val|test)\/trsv2_[a-f0-9]{16}(?:_(?:downscale_065|blur_070))?\.png$/.test(r.image_path) || r.human_verified!==false)throw Error('Unexpected record');
@@ -62,10 +64,13 @@ zero-based categories in this order: ${CLASSES.join(', ')}.
 This staging directory is not itself proof of a Hub publication. The original
 dataset card, limitations and citation are included unchanged. Invalid identity,
 phone and bank formats are learnable shortcuts; no real-world performance,
-trained detector or human review is claimed. Dated full-image OCR/rule baselines are available in the source repository docs/FULL_IMAGE_OCR.md. Code is in the GitHub repository;
+trained detector or human review is claimed. Dated full-image OCR/rule baselines
+and replay observations are included in [the OCR protocol](docs/FULL_IMAGE_OCR.md).
+Code is in [the GitHub repository](https://github.com/temurcanbulut/TR-SecretVision);
 only the CC BY 4.0 synthetic data is included here.
 `;
 await writeFile(resolve(output,'README.md'),card,{flag:'wx'});
 for(const name of ['DATASET_CARD.md','LICENSE','CITATION.cff','ANNOTATION_GUIDELINES.md'])await copyFile(resolve(ROOT,name),resolve(output,name));
-await writeFile(resolve(output,'EXPORT_QA.json'),JSON.stringify({status:'PASS',images:1440,manifest_sha256:sha256(bytes),human_verified:0,network_requests:0,uploaded:false},null,2)+'\n',{flag:'wx'});
+for(const entry of supplements){await mkdir(resolve(output,entry.path,'..'),{recursive:true});await writeFile(resolve(output,entry.path),entry.bytes,{flag:'wx'});}
+await writeFile(resolve(output,'EXPORT_QA.json'),JSON.stringify({status:'PASS',images:1440,manifest_sha256:sha256(bytes),human_verified:0,network_requests:0,uploaded:false,supplements:supplements.map(s=>({path:s.path,sha256:sha256(s.bytes)}))},null,2)+'\n',{flag:'wx'});
 console.log(JSON.stringify({status:'PASS',images:1440,output,uploaded:false}));
