@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — 2026-11-01 review follow-up
+
+- Address the external source review with regression tests, explicit scope decisions and a linked follow-up document.
+- Keep original experiment/release provenance and historical repository URLs; no fabricated model gain or rewritten development history.
+- Run ordinary CI for these changes; no training, paid inference or platform credits.
+
+
 ## Public source distribution — 2026-10-31
 
 Published the generator, evaluation tools, English/Turkish documentation, licenses and twenty unchanged examples at https://github.com/temurcanbulut/TR-SecretVision. The public dataset remains on EVREN. Complete annotation/metadata/mask files are supplied in a checksummed archive and restored offline with `npm run data:prepare`. Small linked QA/publication summaries remain directly browsable.

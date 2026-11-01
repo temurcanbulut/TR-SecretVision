@@ -80,3 +80,5 @@ All values were generated from a closed grammar. Hosts/emails use `.example`; id
 Cite **TR-SecretVision contributors (2026), TR-SecretVision Context v0.2.0**, with the [EVREN dataset link](https://evren.ssyz.org.tr/datasets/u300f9431e45f/tr-secretvision-context-v02). [CITATION.cff](CITATION.cff) contains machine-readable citation metadata. The source repository is https://github.com/temurcanbulut/TR-SecretVision. No DOI is assigned.
 
 Useful contributions include a synthetic-only failure case, an annotation issue identified by sample ID, a fixed-protocol evaluation, or a new application-family proposal. Start with [CONTRIBUTING.md](CONTRIBUTING.md). If the dataset helps your work, a star on its EVREN page can help other researchers discover it.
+
+[2026-11 source-review follow-up and exact limitations](docs/AUDIT_FOLLOWUP.md).

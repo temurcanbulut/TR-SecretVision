@@ -9,3 +9,9 @@ Run `npm test` and `npm run verify` for code/metadata changes. Changes to genera
 New evaluations should follow [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md), declare their input access, model/version, confidence cutoff, split, and clean/stress results. Never report old v0.1 scores as v0.2 performance. Comparisons should include negative false alarms and paired context success alongside recall.
 
 Contributed code uses MIT; contributed synthetic data, metadata and documentation use CC BY 4.0 unless an explicit compatible notice says otherwise. Retain third-party notices. No automated upload, training, export, star exchange or bulk promotional messaging is part of this contribution workflow.
+
+## CI and review history
+
+Security fixes must run CI without skip directives. Release tags require green
+checks for the exact commit. Keep changes reviewable and preserve actual history;
+do not backdate commits or manufacture issues, reviews or benchmark gains.
