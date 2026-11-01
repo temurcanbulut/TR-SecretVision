@@ -36,9 +36,9 @@ Also report:
 - Fraction of target glyph-mask pixels covered by submitted rectangles. IoU recall is **not** the fraction of readable secret material removed. A partially covered fragment can pass IoU and still leak. Full mask coverage is necessary, and not sufficient to prove a real screenshot safe.
 - Logical-value/whole-screen completeness and transcription accuracy when an adapter supports them. The supplied scorer provides fragment detection and pixel coverage; it does not currently compute exact transcription accuracy or semantic re-identification risk.
 
-## No model result for v0.2 yet
+## Local full-image OCR results; no trained detector
 
-No model was trained and no paid inference or EVREN credit was used. The old OCR v2 result (77/80 boxes on the old 30-image test, 96.25% recall) applies only to v0.1's four-class closed grammar. It is not a score for the ten-class context benchmark. Scorer unit tests with constructed predictions test code; they are not model performance.
+No detector was trained and no paid inference or EVREN credit was used. Installed local Windows OCR was run on all 240 clean test PNGs on 2026-11-01; two fixed rule pipelines and their complete artifacts are described in [full-image OCR](docs/FULL_IMAGE_OCR.md). This is OCR engine inference, not detector training. The original frozen release metadata predates this evaluation and is preserved unchanged. The old OCR v2 result (77/80 boxes on the old 30-image test, 96.25% recall) applies only to v0.1's four-class closed grammar. It is not a score for the ten-class context benchmark. Scorer unit tests with constructed predictions test code; they are not model performance.
 
 ## Context is required by construction
 
@@ -46,4 +46,4 @@ No model was trained and no paid inference or EVREN credit was used. The old OCR
 
 ## Next evidence before public claims
 
-Human review of stratified pairs and candidate roles, a frozen full-image OCR baseline on the new set, a trained detector baseline after explicit approval, ablations on context vs literal patterns, and independent opt-in real-world transfer testing. A release can make the data and these unanswered questions public with approval; it must not claim that the intended research gains have already been established.
+Human review of stratified pairs and candidate roles, stronger validation-developed OCR pipelines, a trained detector baseline after explicit approval, ablations on context vs literal patterns, and independent opt-in real-world transfer testing. A release can make the data and these unanswered questions public with approval; it must not claim that the intended research gains have already been established.

@@ -16,9 +16,10 @@
     "verify": "node tools/verify-repository.mjs",
     "data:import": "node tools/import-local-data.mjs",
     "data:prepare": "node tools/prepare-data.mjs",
-    "format:check": "prettier --check src/specs.mjs src/plan.mjs src/format-ablation.mjs tools/rule-baselines.mjs",
+    "format:check": "prettier --check src/specs.mjs src/plan.mjs src/format-ablation.mjs tools/rule-baselines.mjs src/ocr-rules.mjs tools/evaluate-windows-ocr.mjs",
     "baseline:rules": "node tools/rule-baselines.mjs",
-    "ablation:plan": "node src/format-ablation.mjs"
+    "ablation:plan": "node src/format-ablation.mjs",
+    "baseline:ocr:replay": "node tools/evaluate-windows-ocr.mjs"
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "5.3.0",

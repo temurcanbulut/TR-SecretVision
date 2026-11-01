@@ -74,3 +74,13 @@ Kutular tarayıcı DOM karakter aralıklarından, çizim tamamlandıktan sonra a
 ## Lisans ve dağıtım
 
 Veri CC BY 4.0; kod MIT; fontlar OFL. Tam paket üretim kodunu ve açık etiketleri içerir. Veri seti 31 Ekim 2026 tarihinde kullanıcı onayıyla EVREN üzerinde herkese açık yayımlandı. Bu depo dağıtımı kodu, tüm metaveriyi, etiketleri, maskeleri ve 20 değişmemiş örneği içerir; 1.440 görselin tamamını içermez. Ayrıntılar `NOTICE.md`, `EVREN_IMPORT.md` ve `RESEARCH_PROTOCOL.md`.
+
+## 2026-11-01 tarihli OCR değerlendirme eki
+
+240 temiz test görüntüsüne yerleşik Windows OCR (tr) uygulanmış ve iki sabit
+kural hattı değerlendirilmiştir; [tam protokol](docs/FULL_IMAGE_OCR.md).
+Değer kuralları P/R %25,93/%26,88; alan rolü kuralları %97,26/%20,97. IoU≥0,5
+fragment eşleşmesidir; sansür eksiksizliği veya gerçek dünya başarısı değildir.
+Algılayıcı eğitilmedi, ücretli çıkarım veya EVREN kredisi kullanılmadı; yerel OS
+OCR çıkarımı yapıldı. Etiket ve v0.2 yayın metaverisi değiştirilmedi. İnsan
+doğrulaması hâlâ sıfırdır. Oracle metin tabloları bu OCR sonuçlarıyla karıştırılmaz.

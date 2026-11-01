@@ -1,0 +1,14 @@
+{
+    "engine":  "Windows.Media.Ocr.OcrEngine",
+    "language":  "tr",
+    "available_languages":  [
+                                "en-US",
+                                "tr"
+                            ],
+    "windows_build":  "10.0.26200.0",
+    "powershell":  "5.1.26100.9711",
+    "images":  240,
+    "elapsed_seconds":  11.657,
+    "source":  "full original PNG frames; no ground-truth crops or DOM text passed to OCR",
+    "network":  "No network client or external service is called by this script; OS internals were not instrumented."
+}

@@ -16,7 +16,7 @@ Rules were written after the data was public, not selected blindly on validation
 alarms, all slices and matching details. `npm run baseline:rules` reproduces it;
 CI checks that the report does not drift. These scores are not full-image OCR,
 detection recall, learned context understanding or transfer to real screenshots.
-The v0.1 OCR result is still separate. A full-image OCR/model comparison is open.
+The v0.1 OCR result is still separate. Two actual full-image Windows OCR/rule baselines are now available in [the dated OCR protocol](FULL_IMAGE_OCR.md). A trained-detector comparison remains open.
 
 ## Shortcut ablation
 
