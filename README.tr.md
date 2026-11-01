@@ -56,3 +56,5 @@ Sınıflar: API belirteci, parola, e-posta, kimlik bilgili bağlantı, özel ana
 Gerçek ekran veya kişi kaydı toplanmadı. `.example` alanları, geçersiz TCKN/IBAN/telefon ve kriptografik olmayan PEM fikstürleri kullanıldı. Rastlantısal isim benzerliği dışlanamaz. Kapalı gramer, ortak bileşenler ve geçersiz biçimler öğrenilebilir kestirmeler oluşturur; gerçek dünya aktarımı ölçülmedi. Bu bir üretim DLP sistemi veya hukuki KVKK sınıflandırması değildir.
 
 Veri/etiket/metaveri/belge [CC BY 4.0](LICENSE); kod [MIT](LICENSE-CODE); fontlar [OFL](NOTICE.md). Atıf: **TR-SecretVision contributors (2026), TR-SecretVision Context v0.2.0**, [EVREN bağlantısı](https://evren.ssyz.org.tr/datasets/u300f9431e45f/tr-secretvision-context-v02). Kaynak depo: https://github.com/temurcanbulut/TR-SecretVision. Henüz DOI atanmamıştır. [Katkı rehberi](CONTRIBUTING.md) sentetik hata örnekleri ve yeniden üretilebilir araştırma katkıları içindir. Faydalı bulursanız EVREN sayfasındaki yıldız keşfedilmesine yardımcı olabilir.
+
+[2026-11 source-review follow-up and exact limitations](docs/AUDIT_FOLLOWUP.md).
