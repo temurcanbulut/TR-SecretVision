@@ -58,3 +58,12 @@ Gerçek ekran veya kişi kaydı toplanmadı. `.example` alanları, geçersiz TCK
 Veri/etiket/metaveri/belge [CC BY 4.0](LICENSE); kod [MIT](LICENSE-CODE); fontlar [OFL](NOTICE.md). Atıf: **TR-SecretVision contributors (2026), TR-SecretVision Context v0.2.0**, [EVREN bağlantısı](https://evren.ssyz.org.tr/datasets/u300f9431e45f/tr-secretvision-context-v02). Kaynak depo: https://github.com/temurcanbulut/TR-SecretVision. Henüz DOI atanmamıştır. [Katkı rehberi](CONTRIBUTING.md) sentetik hata örnekleri ve yeniden üretilebilir araştırma katkıları içindir. Faydalı bulursanız EVREN sayfasındaki yıldız keşfedilmesine yardımcı olabilir.
 
 [2026-11 source-review follow-up and exact limitations](docs/AUDIT_FOLLOWUP.md).
+
+## Gerçek görüntü OCR başlangıç sonuçları
+
+240 temiz test PNG'sinde kurulu Windows OCR (tr) + sabit kurallar: değer kuralları
+precision **%25,93**, recall **%26,88**; görünür alan rolü kuralları precision
+**%97,26**, recall **%20,97**. Tam karşıt çift başarısı sırasıyla **%0 / %5,83**.
+Bağlam filtresi yanlış alarmı azaltır; çoğu hassas alan hâlâ kaçırılır. Bunlar
+yayından sonra yazılmış tanılayıcılardır, kör deney veya üretim güvenliği iddiası
+değildir. [Ham OCR, kod, kapsam ve yeniden oynatma](docs/FULL_IMAGE_OCR.md).

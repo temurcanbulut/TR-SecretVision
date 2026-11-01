@@ -62,7 +62,7 @@ zero-based categories in this order: ${CLASSES.join(', ')}.
 This staging directory is not itself proof of a Hub publication. The original
 dataset card, limitations and citation are included unchanged. Invalid identity,
 phone and bank formats are learnable shortcuts; no real-world performance,
-OCR/model baseline or human review is claimed. Code is in the GitHub repository;
+trained detector or human review is claimed. Dated full-image OCR/rule baselines are available in the source repository docs/FULL_IMAGE_OCR.md. Code is in the GitHub repository;
 only the CC BY 4.0 synthetic data is included here.
 `;
 await writeFile(resolve(output,'README.md'),card,{flag:'wx'});

@@ -26,3 +26,5 @@ jobs:
       - run: npm run baseline:rules
       - run: git diff --exit-code -- docs/baselines/oracle-text-rules.json
       - run: npm audit --omit=dev --audit-level=high
+      - run: npm run baseline:ocr:replay
+      - run: git diff --exit-code -- docs/baselines/windows-ocr-rules.json

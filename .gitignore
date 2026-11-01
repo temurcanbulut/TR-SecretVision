@@ -15,3 +15,6 @@ metadata/
 annotations/
 labels/
 qa/
+
+# Original OCR is preserved losslessly in the checked-in gzip artifact.
+/docs/baselines/windows-ocr-test.jsonl

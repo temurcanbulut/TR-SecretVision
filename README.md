@@ -67,7 +67,7 @@ Classes, in YOLO order: `api_token`, `password`, `email`, `credential_uri`, `pri
 
 All values were generated from a closed grammar. Hosts/emails use `.example`; identity/IBAN checksums and phone destinations are intentionally invalid; PEM payloads are non-cryptographic fixtures. No real user screenshots or person records were collected. Coincidental generated-name matches cannot be ruled out. Invalid formats, shared components and a limited role vocabulary create learnable shortcuts; real-world transfer is unmeasured.
 
-**All `human_verified` values are false. No model has been evaluated on v0.2.** AI visual inspection is documented separately and is not human verification. Earlier v0.1 OCR results do not measure this release. This is a research fixture, not a production DLP system or legal classification of personal data.
+**All `human_verified` values are false. Two local full-image OCR/rule baselines are now reported; no detector was trained.** AI visual inspection is documented separately and is not human verification. Earlier v0.1 OCR results do not measure this release. This is a research fixture, not a production DLP system or legal classification of personal data.
 
 ## License, citation and contribution
 
@@ -82,3 +82,19 @@ Cite **TR-SecretVision contributors (2026), TR-SecretVision Context v0.2.0**, wi
 Useful contributions include a synthetic-only failure case, an annotation issue identified by sample ID, a fixed-protocol evaluation, or a new application-family proposal. Start with [CONTRIBUTING.md](CONTRIBUTING.md). If the dataset helps your work, a star on its EVREN page can help other researchers discover it.
 
 [2026-11 source-review follow-up and exact limitations](docs/AUDIT_FOLLOWUP.md).
+
+## Full-image OCR baselines
+
+240 original clean test PNGs, installed Windows OCR (Turkish), fixed word/box
+rules, class-aware IoU ≥0.5. No ground-truth crop, DOM text, candidate box or
+per-image class hint is used for prediction. These are post-release diagnostics,
+not blind evaluation or a production redaction claim.
+
+| Pipeline | Precision | Recall | Complete context pairs |
+|---|---:|---:|---:|
+| Windows OCR + literal rules | 25.93% | 26.88% | 0.00% |
+| Windows OCR + visible-role rules | 97.26% | 20.97% | 5.83% |
+
+Context filtering reduces false alarms but leaves most target fragments missed.
+[Reproducible results, raw OCR and limitations](docs/FULL_IMAGE_OCR.md). The
+separate oracle-text diagnostics are not comparable detector scores.
